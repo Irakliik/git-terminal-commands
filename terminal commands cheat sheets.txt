@@ -1,0 +1,36 @@
+"start ." - open location
+"ls" - list of folders in location
+"ls --folder--"  - see what is inside a folder
+"pwd" - print current location path
+"cd --folder--" - go to the folder
+"cd .." - go to backwards one  folder
+"touch " - create a new file
+"mkdir " - create a new folder
+"rm --file--" - delete a file
+"rm -rf --folder" - delete a folder 
+
+
+"git rebase --branch-name--" - alternative for merging 
+"git rebase -i HEAD~4" - 
+
+"git tag <tag-name>" - creating a lightweight tag on whatever the HEAD is pointing
+"git tag" - list all the tags
+" git tag -l "*beta*" " - list all the tags that contain "beta"
+"git checkout <tag-name>" - checkouts a tag
+"git diff <tag-name> <tag-name>" - compares two tags
+"git tag -a <tag-name>" - creating annotated tag
+"git show <tag-name>" - show the metadata of the annotated tags
+"git tag -m <tag-name>" - pass a message directly and forgo the opening of the text editor
+"git tag (-a) <tag-name> <commit-hash>" - tag a commit
+"git tag <tag-name> <commit-hash> -f" - move a tag
+"git tag -d <tag-name>" - delete a tag 
+"git push origin --tags" - push all the tags to the remote repository
+"git push origin <tag-name>" - push a specific tag to the remote repository
+
+"git config user.name "blablabla" " - set global user.name
+"git config --local user.name "blablabla" " - set local username
+"git hash-object <file>" - to hash a file in git
+"echo "hello" | git hash-object --stdin" - hash a text
+"echo "hello" | git hash-object --stdin -w" - hash a text and write in git
+"git cat-file -p <object-hash>" - retrieve data
+"git cat-file -p master^{tree}" - retrieve a tree of a tip of a master branch
